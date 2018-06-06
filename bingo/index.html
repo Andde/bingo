@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html> 
+    <head>
+        <title>Juju Bingo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="bingo.js"></script>
+    </head>
+
+    <body>
+      <div class="divTable">
+            <div id="divTableRow">            
+                <div class="divTableCell">
+                    <div class="circle_container">
+                        <div class="circle_main">
+                            <div class="circle_text_container">
+                                <div id="circle_text" class = "circle_text">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divTableCell2">            
+                    <img src="images/logo.jpg" alt="Bingo" width="223" height="236" />
+                    <h4>Arvotut numerot</h4>
+                    <div id="poll"></div>        
+                </div>
+            </div>
+            <input type="button" class="bingo-btn" value="Aloita peli" onclick="startGame()" id="setgen" />
+            <input type="button" class="bingo-btn" value="Tauko" onclick="pauseGenerator()" id="pausegen" />        
+            <input type="button" class="bingo-btn" value="Arvo numero" onclick="setGenerator()" id="pausegen" />            
+      </div>
+    </body>
+</html>
